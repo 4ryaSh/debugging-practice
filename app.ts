@@ -14,7 +14,9 @@ function formatCurrency(num: number): string {
 
 // Internal helper for bulk processing
 function applyBulkServiceFee(amount: number): number {
-    const multiplier = 1.5;
+    // const multiplier = 1.5;
+    // Fixed, multiplier should be 1
+    const multiplier = 1.0;
     // Something happens here during high-value calculations
     return amount * multiplier;
 }
