@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Invoice</title>
+</head>
+<body data-fee="5">
+    <div class="card">
+        <h2>Invoice Generator</h2>
+        <p>Enter amount and calculate total with 10% tax + service fee.</p>
+        
+        <input type="number" id="basePrice" placeholder="Base Price (e.g. 10000)">
+        <button id="calcBtn">Generate Invoice</button>
+
+        <div id="invoice-box">
+            <p>Subtotal: <span id="subtotalDisplay">Rs: 0</span></p>
+            <p><strong>Total Due: <span id="totalDisplay">Rs: 0</span></strong></p>
+        </div>
+    </div>
+    <script src="dist/app.js"></script>
+</body>
+</html>
